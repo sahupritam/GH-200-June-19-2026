@@ -6,4 +6,11 @@ jobs:
    steps:
      - name: SayHello
        run: echo "Hello from GH-200 Cohack"
+     - name: Copy code into runner
+       uses: actions/checkout@v6
+       
+     - name: List file
+       run: ls - la
+     
+    
   
